@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(123,155,237,1) 1%, rgba(239,238,222,1) 50%, rgba(119,159,229,1) 99%);
+}
+img{
+    max-width: 100%;
+}
+#cjwt{
+    position:relative;
+    /*场景景深*/
+    perspective: 600px;
+    /* 俯瞰效果*/
+    perspective-origin: center -5%;
+}
+
+#wrap{
+    font-size: 29px;
+    /*border: #FFFFFF 5px solid;*/
+    /*z-index: 2;*/
+    /*图片容器大小*/
+    width:300px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    /*3d场景*/
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+}
+#wrap:hover{
+    /*鼠标放上去暂停动画*/
+    animation-play-state: paused;
+}
+#wrap div{
+    padding: 5px;
+    border: #53cbef solid 2px;
+    border-radius: 20px;
+    position: absolute;
+    /*3d过渡动画*/
+    transition: transform 3s;
+    transform: rotateY(0deg) rotateX(0deg);
+}
+#wrap img:hover{
+    transition: transform 2s;
+    transform: scale(1.2);
+    border: #EAD30C 2px solid;
+}
+.bjhz{
+    position:absolute;
+    z-index: -1;
+    width:100%;
+    min-height:500px;
+}
+.bjhz div{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border: #f7f8f9 solid 20px;
+    box-shadow:0 0 80px rgba(251, 251, 251, 0.65);
+    animation:bjhz 3s infinite linear ;
+}
+.bjhz div:nth-child(3n+1){
+    border: #f66af9 solid 30px;
+    box-shadow:0 0 90px rgb(248, 115, 251);
+}
+.bjhz div:nth-child(1){
+    top:50%;
+    left: 20%;
+}
+.bjhz div:nth-child(2){
+    top: 80%;
+    left: 40%;
+}
+.bjhz div:nth-child(3){
+    top: 10%;
+    left: 65%;
+}
+.bjhz div:nth-child(4){
+    top: 55%;
+    left: 65%;
+}
+.bjhz div:nth-child(5){
+    top: 10%;
+    left: 30%;
+}
+.bjhz div:nth-child(6){
+    top: 90%;
+    left: 80%;
+}
+.bjhz div:nth-child(7){
+    top: 80%;
+    left: 5%;
+}
+.bjhz div:nth-child(8){
+    top: 35%;
+    left: 50%;
+}
+.bjhz div:nth-child(9){
+    top: 5%;
+    left: 5%;
+}
+.bjhz div:nth-child(10){
+    top:25%;
+    left: 90%;
+}
+
+/*相册容器旋转动画*/
+@keyframes dh3dxz {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+/*背景方块动画*/
+@keyframes bjhz {
+    from{
+        transform: scale(0) rotate(0deg)  translateY(0);
+        opacity: 100%;
+        border: #7FE2EB 6px solid;
+    }
+    to{
+        transform: scale(1) rotate(180deg)  translateY(100px);
+        opacity: 0;
+    }
+}
+/*启用自动3d和启用手动3d用*/
+.qy3d:first-child{
+   float: right;
+    /*margin-right: 1em;*/
+}
+.qy3d{
+    outline: 0;
+    border: 0;
+    background: radial-gradient( 100% 100% at 100% 0%, rgba(137, 229, 255, 0.54) 0%, rgba(84, 104, 255, 0.56) 100% );
+    box-shadow: 0 0.01em 0.01em rgb(45 35 66), 0 0.3em 0.7em -0.01em rgb(45 35 66 ), inset 0px -0.01em 0px rgb(58 65 111);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.qy3d:active{
+    box-shadow: inset 0 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+    background-color: #dfdfdf;
+}
+.qy3d:hover{
+    background-color: black;
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 ), 0px 0.4em 0.7em -0.1em rgb(45 35 66 ), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+}
+.qydiv{
+    position: absolute;
+    bottom: 2em;
+    padding: 2em;
+    /*margin-top: 3em;*/
+    margin: 3em 1em;
+    width: 100%;
+}
+.qydiv div:first-child{
+    width: 90%;
+}
+/*当是手机屏幕时改变*/
+@media screen and (max-device-width: 410px) {
+    #cjwt{
+        perspective: 900px;
+    }
+    .bjhz div{
+        height: 80px;
+        width: 80px;
+    }
+    .qydiv{
+        width: 90%;
+        margin-top: 5em;
+
+    }
+}

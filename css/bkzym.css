@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*《小王子》百科页面用*/
+body{
+    cursor: url("../imgs/gbys.ico"),default;
+    background-image:var(--bjjbs,linear-gradient(90deg, rgb(119, 173, 251) 1%, rgba(239,238,222,1) 50%, rgb(136, 182, 243) 99%)) ;
+}
+.ejymdh{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+h4{
+    color: rgba(0, 0, 0, 0.81);
+    margin-left: 5em;
+}
+.ejdhla{
+    display: block;
+    line-height: 2em;
+    width: 7em;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #9abbff;
+    margin: 1em 1vh;
+    font-size: 1.2em;
+    color: #6f6bff;
+}
+.ejdhla:hover{
+    background-image:linear-gradient(0deg, rgba(174, 188, 255, 0.82) 51%, rgba(243, 171, 204, 0.91) 100%) ;
+    color: white;
+}
+.ejdhla:active{
+    box-shadow: #6f7aea;
+    transform: scale(0.9);
+}
+/*
+totop 返回页面顶部用
+*/
+#gdrxj{
+    position: fixed;
+    right: 26px;
+    bottom: 60px;
+    background-color: #ffe7e0;
+    /*优先级保证最高*/
+    z-index: 500;
+    padding: 5px;
+}
+.totop{
+    /*鼠标放上去时改变鼠标样子 pointer变成手抓样式*/
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    color: rgba(255, 250, 250, 0);
+}
+.totop:hover{
+    background-color: #ea0529;
+}
+.totop:active{
+    box-shadow:0 0 5px #000000;
+}
+.totop img{
+    width: 30px;
+    height: 30px;
+}
+
+

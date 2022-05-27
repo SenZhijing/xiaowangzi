@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+:root{
+    --zhutys: #85a6ff;
+    --bjjbs:linear-gradient(90deg, rgb(119, 173, 251) 1%, rgba(239,238,222,1) 50%, rgb(136, 182, 243) 99%);
+}
+a{
+    color: #0990Ff;
+    text-decoration: none;
+}
+body{
+    cursor:url("../imgs/gbys.ico")15 15,default;
+    background-image:var(--bjjbs,linear-gradient(90deg, rgb(119, 173, 251) 1%, rgb(255, 250, 234) 50%, rgb(136, 182, 243) 99%)) ;
+}
+.daohl:hover{
+    background-color: rgba(55, 147, 255, 0.42);
+}
+li{
+    list-style: none;
+}
+
+/*页面导航栏*/
+.daohl{
+    /*粘性，粘在顶部*/
+    position: sticky;
+    top: 0;
+    margin-bottom: 2em;
+    height:70px ;
+    vertical-align:middle;
+    padding: 0.3em 1em;
+    font-size: 1em;
+    /*background-image:  radial-gradient(circle, rgb(244, 237, 235) 0%, rgba(85,154,245,1) 100%);*/
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1.1fr;
+    justify-items: center;
+    align-items: center;
+    z-index: 100;
+}
+.daohl a{
+    color: white;
+    text-decoration: none;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.daohl a:hover{
+    /*过渡放大*/
+    transition: 1s transform;
+    transform: scale(1.2);
+}
+.daohl span{
+    /*导航栏中间部分*/
+    color: white;
+    font: 23px 宋体 bold;
+    /*加粗*/
+    font-weight: bold;
+    /*设置渐变*/
+    background:-webkit-linear-gradient(315deg, rgb(114, 158, 255) 50%, rgb(255, 35, 0) 100%);
+    /*背景色被裁剪到文字*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;/*设置文字的填充颜色为透明*/
+    /*过渡*/
+    transition: animation 3s;
+    animation: bspmd 5s infinite linear;
+}
+.daohl nav{
+    display: flex;
+    height: 100%;
+    /*margin-right: 2em;*/
+    align-items: center;
+    float: right;
+}
+nav button{
+    margin: auto 10px;
+    padding: 3px;
+    align-items: center;
+    /*线性渐变*/
+    background-image: linear-gradient(144deg, #e1cd72, #8697e6 50%, #c54946);
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    border: 0;
+    color: #FFFFFF;
+    display: flex;
+    /*内容居中*/
+    justify-content: center;
+}
+nav button a {
+    display: block;
+    background-color: rgba(146, 142, 255, 0.85);
+    width: 4em;
+    height: 2em;
+    text-align: center;
+    border-radius: 6px;
+    /*过渡用时300ms*/
+    transition: 300ms;
+}
+.gyma{
+    background-color: rgba(192, 192, 192, 0);
+}
+
+nav button:hover a{
+    background: none;
+}
+
+button:active {
+    /*点击缩小*/
+    transform: scale(0.9);
+}
+
+@keyframes bspmd {
+    from{
+        transform: scale(0.9);
+    }
+    to{
+        background:-webkit-linear-gradient(0deg, rgb(250, 0, 124) 50%, rgb(101, 144, 255) 100%);
+        /*背景色被裁剪到文字*/
+        -webkit-background-clip: text;
+        transform: scale(1.2);
+    }
+}
