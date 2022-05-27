@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>《小王子》资源</title>
+    <base target="_self">
+    <link rel="stylesheet" href="css/tyys.css" type="text/css" />
+    <link rel="shortcut icon" href="imgs/logohebj/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="css/ejymys.css" type="text/css">
+    <style>
+        /*
+totop 返回页面顶部用
+ */
+        #gdrxj{
+            position: fixed;
+            right: 26px;
+            bottom: 60px;
+            background-color: #ffe7e0;
+            /*优先级保证最高*/
+            z-index: 500;
+            padding: 5px;
+        }
+        .totop{
+            /*鼠标放上去时改变鼠标样子 pointer变成手抓样式*/
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+            color: rgba(255, 250, 250, 0);
+        }
+        .totop:hover{
+            background-color: #ea0529;
+        }
+        .totop:active{
+            box-shadow:0 0 5px #000000;
+        }
+        .totop img{
+            width: 30px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="daohl">
+    <a href="./index.html"><img src="imgs/logohebj/64px.png" alt="小王子" title="小王子logo">小王子</a>
+    <div><span>这里有关于小王子的所有资源哦</span></div>
+    <nav>
+        <button title="主页面"><a  href="./index.html" target="_blank">首页</a></button>
+        <button title="《小王子》的图片、视频、书籍等资源"><a class="gyma">资源</a></button>
+        <button  title="关于《小王子》的简单介绍"><a href="baike.html" target="_blank">百科</a></button>
+        <button  title="本网站的简介"><a href="benzhan.html" target="_blank">我们</a></button>
+    </nav>
+</div>
+<!--主体-->
+<div class="ejymzt">
+    <nav class="ejymdh">
+        <a class="ejdhla" onclick="ggays(this)" href="zym/tujiym.html" target="tzifr">图集</a>
+        <a class="ejdhla" onclick="ggays(this)" href="zym/shipye.html" target="tzifr">视频</a>
+        <a class="ejdhla" onclick="ggays(this)" href="zym/xwzyl.html" target="tzifr">语录</a>
+        <a class="ejdhla" onclick="ggays(this)" href="zym/shujiym.html" target="tzifr">阅读</a>
+        <a class="ejdhla" onclick="ggays(this)" href="zym/yingshi.html" target="tzifr">观影</a>
+    </nav>
+</div>
+<!--onload ifram加载src里的网页时调用-->
+<div style="width: 100%">
+<iframe name="tzifr" id="ejymif" width="100%" height="500px" src="zym/tujiym.html" scrolling="no" frameborder="0" onload="ifmzisy()">
+</iframe>
+</div>
+<div id="gdrxj">
+    <!--返回顶部-->
+    <a class="totop" href="javascript:window.scrollTo(15,15)">
+        <img src="./imgs/totop.png" alt="返回顶部"/>
+    </a>
+</div>
+<!--页面用的js-->
+<script src="./js/sjiymty.js"></script>
+<script src="./js/ejymy.js"></script>
+</body>
+</html>

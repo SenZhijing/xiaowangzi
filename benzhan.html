@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于本站</title>
+    <meta >
+    <link rel="stylesheet" href="css/tyys.css">
+    <link rel="stylesheet" href="css/benzhanys.css" type="text/css">
+    <link class="bqytb" rel="shortcut icon" href="imgs/logohebj/favicon.ico" type="image/ico">
+    <base target="_blank">
+</head>
+<body>
+<div class="daohl">
+    <a href="./index.html"><img src="imgs/logohebj/64px.png" alt="小王子" title="小王子logo">小王子</a>
+    <div><span>联系我们</span></div>
+    <nav>
+        <button title="主页面"><a  href="./index.html" target="_blank">首页</a></button>
+        <button title="《小王子》的图片、视频、书籍等资源"><a href="ziyuany.html" target="_blank" >资源</a></button>
+        <button  title="关于《小王子》的简单介绍"><a href="baike.html" target="_blank">百科</a></button>
+        <button  title="本网站的简介"><a class="gyma">我们</a></button>
+    </nav>
+</div>
+<!--主体-->
+<div class="bzzhuti">
+    <div>
+
+    </div>
+    <div id="zhucedl">
+        <div class="navd">
+            <button id="yhzc" onclick="zcandj()">注册</button>
+            <button id="yhdl" onclick="dlandj()">登录</button>
+        </div>
+        <div id="zcdlhezi">
+            <form action="" method="post" id="zcbd">
+                <div class="txlab">
+                    <label>用户名</label>
+                    <label>密码</label>
+                    <label>确认密码</label>
+                    <label>邮箱</label>
+                    <label>生日</label>
+                    <label>性别</label>
+                </div>
+                <div class="yhsr">
+                    <label>
+                        <input class="pdsr" required="required" pattern="^[A-Za-z0-9_]{4,15}$" placeholder="字母开头,长度为4~15位,(字母.数字.下划线)"/>
+                    </label>
+                    <label>
+                        <input class="pdsr" type="password" required="required" pattern="^\w{4,15}$" placeholder="字母开头,长度为4~15位,(字母.数字.下划线)"/>
+                    </label>
+                    <label>
+                        <input class="pdsr" type="password" required="required" pattern="^\w{4,15}$" placeholder="字母开头,长度为4~15位,(字母.数字.下划线)"/>
+                    </label>
+                    <label>
+                        <input class="pdsr" type="text" required="required" pattern="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+                    </label>
+                    <label>
+                        <input class="pdsr" type="date">
+                    </label>
+                    <label>
+                        <input  type="radio" name="sex">男&emsp;&emsp;&emsp;&emsp;
+                        <input  type="radio" name="sex">女
+                    </label>
+                </div>
+                <div class="zcdli"><input type="submit" value="注册" /></div>
+            </form>
+            <form action="" method="post" id="dlbd">
+                <div class="txlab">
+                    <label>用户名</label>
+                    <label>密码</label>
+                    <label>确认密码</label>
+                </div>
+                <div class="yhsr">
+                    <label>
+                        <input class="pdsr" required="required" pattern="^[A-Za-z0-9_]{4,15}$" placeholder="字母开头,长度为4~15位,(字母.数字.下划线)"/>
+                    </label>
+                    <label>
+                        <input class="pdsr" type="password" required="required" pattern="^\w{4,15}$" placeholder="字母开头,长度为4~15位,(字母.数字.下划线)"/>
+                    </label>
+                    <label>
+                        <input class="pdsr" type="password" required="required" pattern="^\w{4,15}$" placeholder="字母开头,长度为4~15位,(字母.数字.下划线)"/>
+                    </label>
+                </div>
+                <div class="zcdli"><input type="submit" value="登录" /></div>
+            </form>
+        </div>
+    </div>
+    <div class="zzxx">
+        <!--    我的名片-->
+        <div class="mycard">
+            <img alt="tx" src="imgs/wxtx.jpg" title="作者微信头像"/>
+            <div>
+                <h3>Lu Sen</h3>
+            </div>
+            <div>QQ：2594018276
+                <br/>
+                微信：wmyyzzyqxzwlqj
+            </div>
+        </div>
+        <div class="erwm">
+            <h3>Lu Sen</h3>
+            <br/>
+            <div>
+                <div>
+                    <img src="imgs/wxerwm.jpg" title="作者微信二维码" alt="作者微信"/>
+                <br/>作者微信
+                </div>
+                <div>
+                    <img src="imgs/qqerwm.png" title="作者QQ二维码" alt="qq"/>
+                    <br/>作者QQ
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bztx">
+        <h3 style="color: #098df9">提醒</h3>
+        <p>
+            本站涉及了《小王子》大部分的资料，由于作者时间紧迫，该网站并未完全做好，可能有很多漏洞。
+            如发现有任何问题，请联系作者进行改进。
+        </p>
+    </div>
+</div>
+<footer>
+    <span>移动互联2102lcs本网站内容全部为原创，谢绝转载。</span>
+</footer>
+<script>
+    let zcan=document.getElementById('yhzc');
+    let dlan=document.getElementById('yhdl');
+    let zcdlhz=document.getElementById('zcdlhezi');
+    var zcbd=document.getElementById('zcbd');
+    var dlbd=document.getElementById('dlbd');
+    dlbd.style.display='none';
+    function zcandj () {
+        zcan.style.backgroundColor='rgba(85,170,249,0.60)';
+        zcdlhz.height='22em';
+        zcan.style.color='white';
+        zcbd.style.backgroundColor='rgba(85,170,249,0.60)';
+        dlan.style.backgroundColor='#FFFFFF';
+        dlan.style.color='#55aaf9';
+        zcbd.style.display='block';
+        dlbd.style.display='none';
+    }
+   function dlandj () {
+        let zcdlbj=document.getElementById('zhucedl');
+        zcdlbj.height='25em';
+        zcbd.style.display='none';
+        dlbd.style.display='block';
+        dlbd.style.backgroundColor='rgba(85,170,249,0.60)';
+        dlbd.style.color='#ffffff';
+        dlan.style.color='#ffffff';
+        dlan.style.backgroundColor='rgba(85,170,249,0.60)';
+        zcdlhz.height='19em';
+        zcan.style.backgroundColor='#ffffff';
+        zcan.style.color=' #8d87ff';
+
+
+    }
+</script>
+</body>
+</html>

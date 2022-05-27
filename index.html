@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小王子</title>
+    <!--    手机端适配缩小，最小缩到0.3-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=0.3, maxmum-scale=1.0, minimum-scale=0.3">
+    <!--    设置跳转的父页面和方式为新建标签页-->
+    <base target="_self">
+    <link rel="shortcut icon" href="./imgs/logohebj/favicon.ico">
+    <link href="css/tyys.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="daohl">
+    <a href="index.html"><img src="imgs/logohebj/64px.png" alt="小王子" title="小王子logo">小王子</a>
+    <div><span>欢迎来到小王子的世界</span></div>
+    <nav>
+        <button title="主页面"><a class="gyma">首页</a></button>
+        <button title="《小王子》的图片、视频、书籍等资源"><a href="ziyuany.html" target="_blank">资源</a></button>
+        <button title="关于《小王子》的简单介绍"><a href="baike.html" target="_blank">百科</a></button>
+        <button title="本网站的简介"><a href="benzhan.html" target="_blank">我们</a></button>
+    </nav>
+</div>
+<span id="pmdwz">现在是2022年5月36日</span>
+<br/>
+<!--轮播图-->
+<div class="lbtrq" onmouseover="sbys()" onmouseout="sbyc()">
+    <img src="" id="focusImg" alt="小王子"/>
+    <ul id="dian">
+        <li class="lbd" onmousemove="lbthd(this)">1</li>
+        <li class="lbd" onmousemove="lbthd(this)">2</li>
+        <li class="lbd" onmousemove="lbthd(this)">3</li>
+        <li class="lbd" onmousemove="lbthd(this)">4</li>
+        <li class="lbd" onmousemove="lbthd(this)">5</li>
+        <li class="lbd" onmousemove="lbthd(this)">6</li>
+    </ul>
+</div>
+<div class="zhuti">
+    <div class="sydh">
+        <a href="zym/shipye.html">视频</a>
+        <a href="zym/tujiym.html">图集</a>
+        <a href="zym/shujiym.html">书籍</a>
+        <a href="zym/yingshi.html">影视</a>
+        <a href="zym/xwzyl.html">语录</a>
+        <a href="bkzym/shangxi.html">赏析</a>
+    </div>
+    <div class="sygn">
+        <div>
+            <h3>小王子相关书籍</h3>
+            <div>
+                <img src="imgs/sfmt.jpg" alt="书籍封面"/>
+            </div>
+            <a href="zym/shujiym.html">点我在线阅读
+            </a>
+        </div>
+        <div>
+            <h3>小王子相关影视</h3>
+            <div>
+                <img src="imgs/dy.jfif" alt="电影封面图"/>
+            </div>
+            <a href="zym/yingshi.html">点我在线观看
+            </a>
+        </div>
+        <div>
+            <h3>小王子相关视频</h3>
+            <!--            视频自动播放,muted要设为静音模式-->
+            <div>
+                <video controls="controls" autoplay="autoplay" muted="muted">
+                    <source src="ship/sp1.mp4" type="video/mp4"/>
+                </video>
+            </div>
+            <a href="zym/shipye.html">点我查看更多小王子精彩视频</a>
+        </div>
+        <div>
+            <h3>小王子相关图集</h3>
+            <div>
+                <img src="imgs/tu1.jpg" alt="小王子"/>
+            </div>
+            <a href="zym/tujiym.html">点我查看更多小王子精美图片</a>
+        </div>
+        <div>
+            <h3>小王子经典语录</h3>
+            <div>
+                <img src="imgs/ylu.gif" alt="语录"/>
+            </div>
+            <a href="zym/xwzyl.html">点我查看更多小王子经典语录</a>
+        </div>
+        <div>
+            <h3>小王子相关赏析</h3>
+            <div>
+                <img src="imgs/pj.png" alt=""/>
+            </div>
+            <a href="bkzym/shangxi.html">点我查看更多相关赏析</a>
+        </div>
+
+    </div>
+    <div class="yejiao">
+        作者：移动互联2102卢森
+        <br/>
+        如有问题可以联系，qq:2594018276
+    </div>
+</div>
+<script src="./js/index.js" type="text/javascript"></script>
+</body>
+</html>

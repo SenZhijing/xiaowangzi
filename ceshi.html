@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .xlcd{
+            width: 200px;
+        }
+        .xlzs{
+            width: 200px;
+            background-color: #9cbdff;
+            text-align: center;
+            line-height: 1.5em;
+            vertical-align: middle;
+        }
+        .xllb{
+            display: none;
+            width: 200px;
+            height: 1.5em;
+            margin-top: 5px;
+        }
+        .xllb a{
+            margin: 2px auto;
+            text-decoration: none;
+            display: block;
+            background-color: #0990Ff;
+        }
+        .xlcd:hover .xlzs{
+            background-color: #CE913F;
+        }
+        /*鼠标移上去，xllb显示出来*/
+        .xlcd:hover .xllb{
+            display: block;
+            /*变成手抓样式鼠标*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="xlcd">
+    <div class="xlzs">请放置鼠标在此</div>
+    <div  class="xllb">
+        <a>下拉一</a>
+        <a>下拉二</a>
+        <a>下拉三</a>
+    </div>
+</div>
+</body>
+</html>
